@@ -1,0 +1,30 @@
+{
+    "client_id": "demo",
+    "phone_number_id": "7042432151",
+    "greeting": "Hi 👋 This is my WhatsApp assistant.",
+    "menu": {
+      "1": "About me",
+      "2": "Services",
+      "3": "Availability",
+      "4": "Contact"
+    },
+    "faqs": [
+      {
+        "id": "timing",
+        "keywords": ["time", "timing", "available"],
+        "answer": "I am available from 10 AM to 6 PM, Monday to Saturday."
+      },
+      {
+        "id": "location",
+        "keywords": ["location", "address"],
+        "answer": "I am based in Delhi, India."
+      },
+      {
+        "id": "fees",
+        "keywords": ["fees", "price", "cost"],
+        "answer": "Fees depend on the requirement. Please share details."
+      }
+    ],
+    "default_reply": "Thanks for your message. I will get back to you shortly."
+  }
+  
