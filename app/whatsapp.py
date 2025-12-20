@@ -1,7 +1,8 @@
 from app.faq_engine import get_faq_reply
 
 def handle_message(from_number: str, to_number: str, message: str):
-    client_id = f"client_{to_number[-10:]}"  # 7042432151 → client_7042432151
+    # SANDBOX MODE: client is sender
+    client_id = f"client_{from_number[-10:]}"
 
     reply = get_faq_reply(client_id, message)
 
