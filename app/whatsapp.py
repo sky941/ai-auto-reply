@@ -1,12 +1,18 @@
-from app.faq_engine import get_faq_reply
+from app.faq_engine import get_faq_reply, load_client
 
-def handle_message(from_number: str, to_number: str, message: str):
-    # SANDBOX MODE: client is sender
-    client_id = f"client_{from_number[-10:]}"
 
-    reply = get_faq_reply(client_id, message)
+def handle_message(client_id, message):
+    client = load_client(client_id)
+    msg = message.lower().strip()
 
+    if msg == "menu":
+        return client["menu_message"]
+
+    if msg in client["menu"]:
+        return client["menu"][msg]
+
+    reply = get_faq_reply(client_id, msg)
     if reply:
         return reply
 
-    return "Thanks for your message 🙏 We’ll get back to you shortly."
+    return client["default_reply"]
