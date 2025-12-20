@@ -1,16 +1,14 @@
-def get_reply(message: str, client: dict) -> str | None:
-    msg = message.lower().strip()
+import json
 
-    # Greeting
-    if msg in ["hi", "hello", "hey"]:
-        return client["greeting"]
+def load_faq(client_id):
+    with open(f"data/faqs/{client_id}.json") as f:
+        return json.load(f)
 
-    # Menu options
-    if msg in client["menu"]:
-        return client["menu"][msg]
+def get_faq_reply(client_id, message):
+    faqs = load_faq(client_id)
+    msg = message.lower()
 
-    # Keyword based FAQ
-    for faq in client["faqs"]:
+    for faq in faqs:
         for keyword in faq["keywords"]:
             if keyword in msg:
                 return faq["answer"]

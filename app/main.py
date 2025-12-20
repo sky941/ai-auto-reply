@@ -1,10 +1,24 @@
-from fastapi import FastAPI
-from app.webhook import router
+from fastapi import FastAPI, Request, Response
+from twilio.twiml.messaging_response import MessagingResponse
+from app.whatsapp import handle_message
 
-app = FastAPI(title="WhatsApp Auto Reply SaaS")
+app = FastAPI()
 
-app.include_router(router)
+@app.post("/webhook")
+async def whatsapp_webhook(request: Request):
+    form = await request.form()
 
-@app.get("/")
-def health():
-    return {"status": "Backend running successfully"}
+    from_number = form.get("From").replace("whatsapp:", "")
+    to_number = form.get("To").replace("whatsapp:", "")
+    message = form.get("Body", "")
+
+    print("📩 From:", from_number)
+    print("📲 To (Client):", to_number)
+    print("💬 Message:", message)
+
+    reply_text = handle_message(from_number, to_number, message)
+
+    twiml = MessagingResponse()
+    twiml.message(reply_text)
+
+    return Response(content=str(twiml), media_type="application/xml")

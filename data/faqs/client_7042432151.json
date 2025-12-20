@@ -1,0 +1,15 @@
+[
+    {
+      "keywords": ["time", "timing", "open", "available"],
+      "answer": "We are open from 9 AM to 6 PM, Monday to Saturday."
+    },
+    {
+      "keywords": ["location", "address", "where"],
+      "answer": "We are located at MG Road, Delhi."
+    },
+    {
+      "keywords": ["contact", "call", "phone"],
+      "answer": "You can call us on 7042432151 during business hours."
+    }
+  ]
+  
