@@ -1,0 +1,47 @@
+{
+    "client_id": "cajkds",
+    "business_name": "CA JKDS & Associates",
+  
+    "contact": {
+      "phone": "+91-XXXXXXXXXX",
+      "call_message": "📞 You may call us at +91-XXXXXXXXXX."
+    },
+  
+    "menu_message": "Please reply with a number:\n1️⃣ Audit & Assurance\n2️⃣ Taxation\n3️⃣ Registrations & Licenses\n4️⃣ Compliance\n5️⃣ Advisory & Management\n6️⃣ Contact Details\n7️⃣ Website",
+  
+    "menu": {
+      "1": "Audit & Assurance Services include statutory audit, internal audit, and assurance services.\n🔗 https://www.cajkds.com/AuditandAssuranceServices.aspx",
+      "2": "Taxation services include Income Tax, GST, tax planning, and litigation support.\n🔗 https://www.cajkds.com/TaxAssessmentsLitigations.aspx",
+      "3": "We assist with company registration, GST registration, licenses, and approvals.\n🔗 https://www.cajkds.com/RegistrationsLicenses.aspx",
+      "4": "Compliance services include ROC, GST, income tax, and statutory compliances.\n🔗 https://www.cajkds.com/Compliance.aspx",
+      "5": "Advisory & management services include business advisory and financial consulting.\n🔗 https://www.cajkds.com/AdvisoryServices.aspx",
+      "6": "📞 Contact us at +91-XXXXXXXXXX\n🌐 https://www.cajkds.com/ContactUs.aspx",
+      "7": "🌐 Visit our website: https://www.cajkds.com"
+    },
+  
+    "faqs": [
+      {
+        "keywords": ["time", "timing", "office hours", "working hours"],
+        "answer": "⏰ Our office operates Monday to Saturday. Please contact us for appointment availability."
+      },
+      {
+        "keywords": ["location", "address", "office"],
+        "answer": "📍 Please visit our contact page for address details:\nhttps://www.cajkds.com/ContactUs.aspx"
+      },
+      {
+        "keywords": ["services", "what do you do"],
+        "answer": "We provide Audit, Taxation, Registrations, Compliance, and Advisory services."
+      },
+      {
+        "keywords": ["call", "phone", "contact number"],
+        "answer": "📞 You may call us at +91-XXXXXXXXXX."
+      },
+      {
+        "keywords": ["website", "site", "link"],
+        "answer": "🌐 Visit our website: https://www.cajkds.com"
+      }
+    ],
+  
+    "default_reply": "Thank you for contacting *CA JKDS & Associates* 🙏\nType *menu* to view our services."
+  }
+  
