@@ -9,9 +9,9 @@ def handle_message(message: str) -> str:
 
     if msg in ["hi", "hello", "start"]:
         return (
-            "👋 *Welcome to JKDS Business Support*\n"
+            "👋 *Welcome to XYZ Business Support*\n"
             "How can we assist you today?\n\n"
-            "1️⃣ About JKDS\n"
+            "1️⃣ About XYZ\n"
             "2️⃣ Services Overview\n"
             "3️⃣ Contact & Offices\n"
             "4️⃣ Request a Consultation\n\n"
@@ -20,7 +20,7 @@ def handle_message(message: str) -> str:
 
     elif msg == "1":
         return (
-            "📌 *About JKDS*\n"
+            "📌 *About XYZ*\n"
             "JKDS is a professional services firm offering\n"
             "taxation, corporate advisory, accounting,\n"
             "audit and compliance support to businesses."
