@@ -5,11 +5,11 @@
           {
             "value": {
               "metadata": {
-                "phone_number_id": "7042432151"
+                "phone_number_id": "7042xxxxxx"
               },
               "messages": [
                 {
-                  "from": "7042432151",
+                  "from": "7042xxxxxx",
                   "text": {
                     "body": "What are your timings?"
                   }
