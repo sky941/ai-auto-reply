@@ -1,6 +1,6 @@
 {
     "client_id": "demo",
-    "phone_number_id": "7042432151",
+    "phone_number_id": "70424XXXXXX",
     "greeting": "Hi 👋 This is my WhatsApp assistant.",
     "menu": {
       "1": "About me",
